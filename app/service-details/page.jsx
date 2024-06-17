@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense  } from "react";
 import { Spinner } from "../_components/Spinner";
 import { useSession } from "next-auth/react";
 import Header from "../_components/Header";
@@ -244,4 +244,12 @@ const ServiceDetail = () => {
   );
 };
 
-export default ServiceDetail;
+const Page = () => {
+  return (
+    <Suspense fallback={<Spinner />}>
+      <ServiceDetail />
+    </Suspense>
+  );
+};
+
+export default Page;

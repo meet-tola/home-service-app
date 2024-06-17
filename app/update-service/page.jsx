@@ -1,13 +1,13 @@
 "use client";
 import { useRouter, useSearchParams } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import axios from "axios";
 import { Spinner } from "../_components/Spinner";
 import Header from "../_components/Header";
 import toast, { Toaster } from "react-hot-toast";
 import ServiceForm from "../_service/ServiceForm";
 
-const Page = () => {
+const UpdateService = () => {
   const searchParams = useSearchParams();
   const serviceId = searchParams.get("id");
   const [loading, setLoading] = useState(true);
@@ -109,6 +109,14 @@ const Page = () => {
         handleSubmit={handleSubmit}
       />
     </>
+  );
+};
+
+const Page = () => {
+  return (
+    <Suspense fallback={<Spinner />}>
+      <UpdateService />
+    </Suspense>
   );
 };
 

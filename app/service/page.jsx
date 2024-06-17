@@ -1,15 +1,14 @@
 "use client";
 import { useSession } from "next-auth/react";
 import { useSearchParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import axios from "axios";
 import { Spinner } from "../_components/Spinner";
 import Header from "../_components/Header";
 import ServiceList from "../_service/ServiceList";
 
-const Page = () => {
+const ServiceContent = () => {
   const [loading, setLoading] = useState(true);
-
   const { data: session } = useSession();
   const loggedInUserId = session?.user?.id;
 
@@ -55,6 +54,14 @@ const Page = () => {
         </div>
       </div>
     </>
+  );
+};
+
+const Page = () => {
+  return (
+    <Suspense fallback={<Spinner />}>
+      <ServiceContent />
+    </Suspense>
   );
 };
 
