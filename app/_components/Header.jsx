@@ -25,11 +25,7 @@ const Header = () => {
             <Image src="/logo.svg" alt="logo" width={50} height={50} />
             Home Service
           </Link>
-          <div className="sm:hidden md:flex items-center gap-6 font-medium">
-            <Link href="/" className="hover:scale-105 hover:text-red-500 cursor-pointer">
-              All Service
-            </Link>
-          </div>
+          
         </div>
         <div>
           {user ? (
