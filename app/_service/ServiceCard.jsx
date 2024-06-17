@@ -33,7 +33,6 @@ const ServiceCard = ({ service }) => {
       router.reload();
     } catch (error) {
       console.error("Failed to delete service:", error);
-      toast.error("Failed to delete service. Please try again.");
     }
   };
 
