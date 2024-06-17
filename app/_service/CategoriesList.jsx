@@ -43,7 +43,7 @@ const CategoriesList = () => {
         {categories.map((category) => (
           <Button
             key={category.value}
-            className={`font-semibold ${
+            className={`font-semibold mb-8 ${
               selectedCategory === category.value
                 ? "bg-primary text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-primary hover:text-white"
