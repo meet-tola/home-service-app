@@ -29,7 +29,7 @@ const CategoriesList = () => {
 
   return (
     <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-10">
-      <div className="flex flex-wrap justify-center space-x-4 mb-8">
+      <div className="flex flex-wrap justify-center space-x-4 mb-5">
         <Button
           className={`mb-4 font-semibold ${
             selectedCategory === "All"
@@ -43,7 +43,7 @@ const CategoriesList = () => {
         {categories.map((category) => (
           <Button
             key={category.value}
-            className={`font-semibold mb-8 ${
+            className={`font-semibold mb-5 ${
               selectedCategory === category.value
                 ? "bg-primary text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-primary hover:text-white"
