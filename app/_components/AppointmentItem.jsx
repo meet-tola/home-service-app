@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar, Clock, Contact, User } from "lucide-react";
 import {
@@ -101,12 +101,11 @@ const AppointmentItem = ({ appointment, onCancelAppointment }) => {
         <TabsTrigger value="booked">Appointment</TabsTrigger>
       </TabsList>
       <TabsContent value="booked">
-        <Suspense fallback={<Spinner />}>
           <AppointmentContent
             appointment={appointment}
             onCancelAppointment={onCancelAppointment}
           />
-        </Suspense>
+        
       </TabsContent>
     </Tabs>
   );
