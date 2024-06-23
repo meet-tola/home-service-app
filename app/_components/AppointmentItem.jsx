@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar, Clock, Contact, User } from "lucide-react";
 import {
@@ -13,7 +13,7 @@ import {
   AlertDialogAction,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
-import { Spinner } from "@/components/ui/spinner";
+
 
 const AppointmentContent = ({ appointment, onCancelAppointment }) => {
   const { service } = appointment;
@@ -101,12 +101,11 @@ const AppointmentItem = ({ appointment, onCancelAppointment }) => {
         <TabsTrigger value="booked">Appointment</TabsTrigger>
       </TabsList>
       <TabsContent value="booked">
-        <Suspense fallback={<Spinner />}>
           <AppointmentContent
             appointment={appointment}
             onCancelAppointment={onCancelAppointment}
           />
-        </Suspense>
+        
       </TabsContent>
     </Tabs>
   );
