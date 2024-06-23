@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Home Service Marketplace App
 
-## Getting Started
+I developed a comprehensive home service marketplace web app that connects service providers with customers seeking various home services. The platform offers a streamlined process for both service providers and customers to manage their needs efficiently
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+  - [Features](#features)
+  - [Links](#links)
+  - [Built with](#built-with)
+- [Author](#author)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+For Service Providers:
+- Create & Offer Services: Providers can create detailed service listings with descriptions, images, and pricing.
+Manage Appointments: Easily receive and manage appointments booked by customers.
+- Edit & Delete Services: Full control to update or remove services as needed.
 
-## Learn More
+For Customers:
+- Discover Services: Browse through a variety of home services offered by different providers.
+- Book Appointments: View service details and book appointments with ease.
+- Manage Bookings: Option to delete booked appointments if plans change.
 
-To learn more about Next.js, take a look at the following resources:
+### Links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Solution URL: [https://github.com/meet-tola/home-service-app](https://github.com/meet-tola/home-service-app)
+- Live Site URL: [https://home-service-appp.vercel.app/](https://home-service-appp.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Built with
 
-## Deploy on Vercel
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - For styles
+- [shadcn UI](https://shadcnui.com/) - For styles
+- [MongoDB](https://mongodb.com//) - Database
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Twitter - [@Tola](https://www.twitter.com/meet-tola)
